@@ -4,7 +4,38 @@
   justify-content: center;
   align-items: end;
   height: 600px;
+  user-select: none;
 }
 #brincar img{
   height: 400px;
+}
+
+/* styles.css o tu archivo de estilos */
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-200px);
+  }
+}
+
+.box {
+  /* Estilos básicos del contenedor aquí */
+  width: 100px;
+  height: 100px;
+  /* Otros estilos según tus necesidades */
+}
+
+.jump {
+  animation: jump .5s ease-out; /* 0.5s es la duración de la animación */
+}
+
+#suelo{
+  font-size: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 30px;
 }
